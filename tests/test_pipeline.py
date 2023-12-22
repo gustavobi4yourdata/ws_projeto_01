@@ -18,3 +18,4 @@ def testar_a_concatenacao_da_lista_de_dataframe():
     # assert
     assert df.shape == (4,2)     # O corpo do dataframe é igual (4,2)
     assert data_frame.equals(df) # Um data fica igual o outro
+    assert df.shape != (5,2)
