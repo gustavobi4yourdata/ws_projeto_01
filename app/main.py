@@ -1,7 +1,12 @@
 from pipeline.extract import extract_from_excel
+from pipeline.transform import contact_data_frame
+from pipeline.load import load_excel
 
-listas_de_data_frame = extract_from_excel("data/input")
-print(listas_de_data_frame)
+if __name__ == "__main__":
+    data_frame_list = extract_from_excel("data/input")
+    data_frame = contact_data_frame(data_frame_list)
+    load_excel(data_frame, "data/output", "output")
+
 
 
 
