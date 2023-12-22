@@ -1,0 +1,7 @@
+.venv
+.vscode
+poetry.lock
+
+# Arquivos de teste
+path.py
+version_python.py
